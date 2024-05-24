@@ -6,6 +6,14 @@ resource "aws_lb" "main" {
   subnets            = var.public_subnet_ids
 }
 
+# Target Group
+resource "aws_lb_target_group" "main" {
+  name     = "my-target-group"
+  port     = 80
+  protocol = "HTTP"
+  vpc_id   = aws_vpc.main.id
+}
+
 # HTTP to HTTPS Redirect
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.main.arn
@@ -29,6 +37,6 @@ resource "aws_lb_listener" "https" {
 
   default_action {
     type             = "forward"
-    target_group_arn = "your-target-group-arn" # Replace with your actual target group ARN
+    target_group_arn = aws_lb_target_group.main.arn
   }
 }

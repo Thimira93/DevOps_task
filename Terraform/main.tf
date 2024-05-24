@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-west-1" # Update with your desired region
-}
-
 
 module "network" {
   source = "./modules/network"
