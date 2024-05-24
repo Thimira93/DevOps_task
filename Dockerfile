@@ -28,4 +28,4 @@ WORKDIR /app
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Start Gunicorn and Nginx
-CMD service nginx start && gunicorn --bind 0.0.0.0:8000 app:app
+CMD service nginx start && gunicorn --bind 127.0.0.1:8000 app:app
