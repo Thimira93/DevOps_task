@@ -1,11 +1,14 @@
-# DevOps_task
+# README
 
-This repo consists of the files for simple python hello world app deployed in a docker container with nginix, hosted in an ecs cluster. Deployment is carried out using jenkins CICD pipelines.
+- **Repo Contents**:
+  - Simple Python Hello World app deployed in a Docker container with Nginx, hosted in an ECS cluster.
+  - Deployment via Jenkins CI/CD pipelines.
 
-***Sr_DevOps_Eng_-_DevOps_Test.pdf*** - Excersice pdf file
-***Task_files*** - Architecture diagram and Answer pdf files
-***CICD_dir*** - bash script files for Jenkins pipeline
-***Terraform_dir*** - Terraform files
-***Dockerfile*** - Dockerfile used for creating the app.py python appy and nginx
-***nginx.conf*** - Nginx config file
-***app*** - python application
+- **Files and Directories**:
+  - `Sr_DevOps_Eng_-_DevOps_Test.pdf`: Exercise PDF file.
+  - `Task_files`: Contains architecture diagram and answer PDF files.
+  - `CICD_dir`: Bash script files for Jenkins pipeline.
+  - `Terraform_dir`: Terraform files.
+  - `Dockerfile`: Dockerfile used for creating the app.
+  - `nginx.conf`: Nginx config file.
+  - `app`: Python application.
